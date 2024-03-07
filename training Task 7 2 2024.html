@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Task 7 2 2024</title>
+  </head>
+
+  <body>
+    <script>
+      /*1*/
+      let temp = prompt("Enter the temperature outside:");
+      console.log(temp);
+
+      if(+temp<10){
+        console.log("Stay warm with our winter collection!")
+      }else if(+temp>25){
+        console.log("Enjoy the sunshine with our summer collection!")
+      }else if(10<=(+temp) && (+temp)<=25){
+        console.log("Check out our all-season collection!")
+      }else{
+          console.log("invalid input");
+      }
+
+
+      /*2*/
+
+      let score = prompt("Enter your score:");
+      console.log("Your score:", score);
+
+      if(+score>90){
+        console.log("Gold Badge");
+      }else if(+score<70){
+        console.log("Bronze Badge");
+      }else if(70<= +score <=90){
+        console.log("Silver Badge");
+      }else{
+          console.log("invalid input");
+      }
+      
+      /*
+      let password = prompt("Enter a new password  (min. characters:8  min.uppercase character:1  min.lowercase character:1  min.special character:1):");
+      console.log("Your password:", password);
+
+      if(password.length<8){
+        console.log("The password is too small");
+      }
+      */
+
+//basic=20
+//
+      /*5*/
+      let age = prompt("Enter your age:");
+      console.log("Your age:", age);
+
+      let plan = prompt("Enter a plan (Basic, Standard, Premium)");
+      console.log("Your plan:", plan);
+
+      if(age<18){
+        console.log("You are eligible for a 10% discount");
+        if(plan=="Basic"){
+          console.log("Fee:9$/month");
+        }else if(plan=="Standard"){
+          console.log("Fee:18$/month");
+        }else if(plan=="Premium"){
+          console.log("Fee:27$/month")
+        }
+      }else if(18<=age<=60){
+        console.log("Regular Price");
+        if(plan=="Basic"){
+          console.log("Fee:10$/month");
+        }else if(plan=="Standard"){
+          console.log("Fee:20$/month");
+        }else if(plan=="Premium"){
+          console.log("Fee:30$/month")
+        }
+      }else if(age>60){
+        console.log("You are eligible for 20% discount");
+        if(plan=="Premium"){
+          console.log("Fee:24$/month");
+        }
+      }else{
+          console.log("invalid input");
+      }
+
+
+
+
+      /*6*/
+      let userAge = prompt("Enter your Age");
+      console.log("Your Age:", userAge);
+
+      if(userAge>=18){
+        "Access granted"
+      }else{
+        "Access denied"
+      }
+
+
+
+      /*9*/
+      let weight = prompt("Enter weight:");
+      console.log("Weight:", weight);
+
+      let destination = prompt("Enter destination (Turkey, Oman, Armenia):");
+      console.log("Destination:", destination);
+
+      if(weight<=20){
+        if(destination=="Turkey"){
+          console.log("Shipping rate: 100$");
+        }else if(destination=="Oman"){
+          console.log("Shipping rate: 150$");
+        }else if(destination=="Armenia"){
+          console.log("Shipping rate: 200$");
+        }
+      }else if(weight>=20 && weight<=60){
+        if(destination=="Turkey"){
+          console.log("Shipping rate: 150$");
+        }else if(destination=="Oman"){
+          console.log("Shipping rate: 200$");
+        }else if(destination=="Armenia"){
+          console.log("Shipping rate: 250$");
+        }
+      }else if(weight>=60){
+        if(destination=="Turkey"){
+          console.log("Shipping rate: 200$");
+        }else if(destination=="Oman"){
+          console.log("Shipping rate: 300$");
+        }else if(destination=="Armenia"){
+          console.log("Shipping rate: 400$");
+        }
+        }else{
+          console.log("invalid input");
+      }
+
+/*
+      let Shaheen={
+        password:"shaheen",
+      }
+      let Prabha={
+        password:"prabha",
+      }
+
+      let userName = prompt("enter username:");
+      let passWord = prompt("enter password");
+
+      if(passWord==userName.password){
+
+      } 
+      */
+
+
+      /*11*/
+      let Temp = prompt("Enter temperature");
+      console.log("Temperature:", Temp);
+
+      let Humidity = prompt("Enter humidity");
+      console.log("Humidity:", Humidity);
+
+      if(Temp>25){
+        if(Humidity>40){
+          console.log("Wear sunscreen and light clothes");
+        }else{
+          console.log("Wear sunscreen");
+        }
+      }else if(Temp<=25){
+        if(Humidity>40){
+          console.log("Carry umbrella it might rain");
+        }else{
+          console.log("It's a pleasant weather outside");
+        }
+      }
+
+
+
+
+      /*12*/
+      let quizAns = prompt("Which is the longest river in Russia? Options: a.Volga, b.Euphrates, c.Ganges, d.Thames (Note: Enter only the option letter)");
+      console.log(quizAns);
+
+      if(quizAns=="a"){
+        console.log("You are correct!");
+      }else if(quizAns=="b" || quizAns=="c" || quizAns=="d"){
+        console.log("Wrong Answer!");
+      }else{
+        console.log("Invalid Input");
+      }
+
+
+
+        let vayasu = prompt("enter yo vayasu");
+        console.log(vayasu);
+
+        let pack = prompt("ungal pack:");
+        console.log(pack);
+
+        let basic1 = 100;
+        let standard1 = 200;
+        let premium1 = 300;
+
+        if(vayasu<18){
+          if(pack=="basic"){
+            console.log(basic1-((10/100)*(basic1)));
+          }
+        }else{
+          console.log("poda patti");
+        }
+
+
+    </script>
+  </body>
+</html>
+
+

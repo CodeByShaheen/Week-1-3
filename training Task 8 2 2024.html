@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Task 8 2 2024</title>
+  </head>
+
+  <body>
+    <script>
+
+      /*1a*/
+      function calculateRectanglePerimeter(length,width){
+        console.log("Perimeter of rectangle:",(2*length) + (2*width));
+      }
+
+      calculateRectanglePerimeter(12,10);
+      /*1b*/
+        const hiDude = "Wassup";
+        let hiName = "Kamil";
+        var hiStaff = "Professor";
+      function sayHi(){
+        let hiName = "Shaheen";
+        var hiStaff = "HoD";
+        const hiDude = "Hola";
+        console.log(hiName);
+        console.log(hiStaff);
+        console.log(hiDude);
+      }
+
+      sayHi();
+      //let has block scope-evident from the console O/P of this line.
+      //var has block scope-evident from the console O/P of this line.
+      console.log(hiName);
+      console.log(hiStaff);
+      console.log(hiDude);
+
+
+
+      //let over18 = confirm("Click OK only if you are over 18 years of age?");
+      //if()
+
+      /*3*/
+      let birthYear1 = prompt("Enter a year of Birth:");
+      console.log(birthYear1);
+      let birthYear2 = prompt("Enter another year of Birth:");
+      console.log(birthYear2);
+
+      function calculateAgeDifference(birthYear1st,birthYear2nd){
+        let diff = birthYear1st - birthYear2nd;
+        if(diff<0){
+          diff = diff*(-1);
+          }
+          return diff;
+        
+      }
+      let yearDiff = calculateAgeDifference(birthYear1,birthYear2);
+      let YearDiffAlert = alert(`Difference in age: ${yearDiff}`);
+
+
+      /*4*/
+      let number = prompt("Enter a number you want to find the percentage of:");
+      console.log(number);
+      let percent = prompt("Enter the percentage you wish to find");
+      console.log(percent);
+
+      function calculatePercentage(num,perc){
+        return num*(perc/100);
+      }
+
+      console.log(calculatePercentage(number,percent));
+
+      /*5*/
+      let triSide1 = prompt("Enter length of 1st side:");
+      console.log("side 1:",triSide1);
+      let triSide2 = prompt("Enter length of 2nd side:");
+      console.log("side 2:",triSide2);
+      let triSide3 = prompt("Enter length of 3rd side:");
+      console.log("side 3:",triSide3);
+
+      function checkTriangleInequality(side1,side2,side3){
+        if((side1+side2)>side3 || (side1+side3)>side2 || (side3+side2)>side1){
+          console.log("The sides form a triangle.");
+        }else{
+          console.log("The side do not form a triangle");
+        }
+      }
+
+      checkTriangleInequality(triSide1,triSide2,triSide3);
+
+
+
+      /*6*/
+      let passAge = prompt("Enter your age:");
+      console.log("Passenger Age:", passAge);
+
+      function calculateTicketPrice(age){
+        if(age<12){
+          console.log("Price:$5");
+        }else if(12<=age<=64){
+          console.log("Price:$10");
+        }else if(age>64){
+          console.log("Price:$7");
+        }else{
+          console.log("Invalid Input");
+        }
+      }
+
+      calculateTicketPrice(passAge);
+
+
+
+      /*7*/
+      let num1 = prompt("Enter a number for testing:");
+      console.log(num1);
+
+      function isBetweenRanges(number1){
+        if((number1>=30 && number1<=40)||(number1>=10 && number1<=20)){
+          return true;
+        }else{
+          return false;
+        }
+      }
+
+      console.log(isBetweenRanges(num1));
+
+
+
+      /*8*/
+      let firstName = prompt("Enter first name:");
+      console.log(firstName);
+
+      let secondName = prompt("Enter second name:");
+      console.log(secondName);
+
+      function getFullName(name1,name2){
+        
+        if(((name1??name2)==name1) && ((name2??name1)==name2)){
+          console.log((name1??name2), (name2??name1));
+        }else{
+          console.log("Unknown");
+        }
+      }
+
+      getFullName(firstName,secondName);
+
+
+
+
+      /*9*/
+      let planet = prompt("Enter name of the planet you wish to find the relative gravity of:");
+      console.log("planetname:",planet);
+
+      function getPlanetGravity(planetName){
+
+        switch(planetName){
+
+          case "Mercury":
+            console.log("Relative Gravity:", 0.4);
+            break;
+
+          case "Venus":
+            console.log("Relative Gravity:", 0.98);
+            break;
+          
+          case "Mars":
+            console.log("Relative Gravity:", 0.38);
+            break;
+
+          case "Jupiter":
+            console.log("Relative Gravity:", 2.53);
+            break;
+          
+          default :
+            console.log("Data unavailable!");
+            break;
+        }
+      }
+
+      getPlanetGravity(planet);
+
+
+
+/*
+      let powerOf2 = console.log("Enter a number and check if it is a power of 2");
+      console.log("Number:", powerOf2);
+
+      let calculatePowerOfTwo = function (numberr){
+        if(numberr>0){
+          if((numberr%2==0)&&())
+        }
+      }
+      
+*/
+
+
+
+
+    </script>
+  </body>
+</html>
